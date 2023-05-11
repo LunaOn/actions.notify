@@ -75,7 +75,7 @@ async function run() {
       msg = `code: ${res.code}, msg: ${res.msg}`;
     }
 
-    core.setOutput('msg', `${new Date() + ': ' + msg}`);
+    // core.setOutput('msg', `${new Date() + ': ' + msg}`);
   } catch (error) {
     core.setFailed(error);
   }
