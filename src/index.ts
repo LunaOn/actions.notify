@@ -71,11 +71,11 @@ async function run() {
       } else {
         res = await notify.notify();
       }
-
       msg = `code: ${res.code}, msg: ${res.msg}`;
     }
 
-    // core.setOutput('msg', `${new Date() + ': ' + msg}`);
+    console.log(msg);
+    
   } catch (error) {
     core.setFailed(error);
   }
